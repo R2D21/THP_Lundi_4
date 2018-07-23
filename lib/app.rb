@@ -19,6 +19,8 @@ class GossipProjectApp < Sinatra::Base
 
   # get %r{/gossips/([\d]+)} do
   #    @id = params[:captures].first
-
+  get '/gossips/:id/' do
+    @id = params[:id]
+  end
 end
 end
