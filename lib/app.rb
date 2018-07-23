@@ -20,3 +20,4 @@ class GossipProjectApp < Sinatra::Base
      @id = params[:captures].first
 
 end
+end
