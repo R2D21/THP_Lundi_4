@@ -5,6 +5,7 @@
   <body>
         <p>
           <%= voici le numéro : <%= @id%><br/>
+          <%= voici l'auteur : <%= Gossip.find(@id)[1]%><br/>
         </p>
       <% end %>
       Tu peux créer un potin par <a href="/gossips/new">ici</a>
