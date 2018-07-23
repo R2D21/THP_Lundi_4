@@ -17,10 +17,9 @@ class GossipProjectApp < Sinatra::Base
     erb :index, locals: {gossips: Gossip.all}
   end
 
-  # get %r{/gossips/([\d]+)} do
-  #    @id = params[:captures].first
-  get '/gossips/:id/' do
-    @id = params[:id]
+   #    @id = params[:captures].first
+  get %r{/gossips/([\d]+)} do
+y   @id = params[:id]
     erb :profile
   end
 end
