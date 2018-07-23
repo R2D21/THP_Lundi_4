@@ -9,8 +9,8 @@ class Gossip
     def save
     CSV.open("./db/gossip.csv", "ab") do |csv|
 
+    csv << [@author, @content]
     end
-csv << [@author, @content]
     end
 
     def self.find(item)
