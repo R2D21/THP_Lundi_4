@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+</head>
+  <body>
+        <p>
+          <%= voici le numéro : <%= gossip.author %><br/>
+          <%= gossip.content %>
+        </p>
+      <% end %>
+      Tu peux créer un potin par <a href="/gossips/new">ici</a>
+  </body>
+</html>
