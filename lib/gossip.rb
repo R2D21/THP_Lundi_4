@@ -12,14 +12,16 @@ class Gossip
     end
 csv << [@author, @content]
     end
-def self.find(item)
-    p CSV.readlines("./db/gossip.csv")[item.to_i]
-  end
+
+    def self.find(item)
+      p CSV.readlines("./db/gossip.csv")[item.to_i]
+    end
+
     def self.all
-  all_gossips = []
-  CSV.read("./db/gossip.csv").each do |csv_line|
-    all_gossips << Gossip.new(csv_line[0], csv_line[1])
-  end
-  return all_gossips
-end
+      all_gossips = []
+      CSV.read("./db/gossip.csv").each do |csv_line|
+        all_gossips << Gossip.new(csv_line[0], csv_line[1])
+      end
+      return all_gossips
+    end
 end
