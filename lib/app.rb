@@ -24,4 +24,3 @@ class GossipProjectApp < Sinatra::Base
     erb :profile
   end
 end
-end
