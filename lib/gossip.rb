@@ -12,7 +12,6 @@ class Gossip
     end
 csv << [@author, @content]
     end
-  end
   def self.all
   all_gossips = []
   CSV.read("./db/gossip.csv").each do |csv_line|
