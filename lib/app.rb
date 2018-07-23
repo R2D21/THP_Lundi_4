@@ -3,6 +3,7 @@ require "gossip"
 
 class GossipProjectApp < Sinatra::Base
 
+  attr_accessor :id
   get '/gossips/new' do
     erb:new_gossips
   end
