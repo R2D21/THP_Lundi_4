@@ -19,7 +19,7 @@ class GossipProjectApp < Sinatra::Base
 
    #    @id = params[:captures].first
   get %r{/gossips/([\d]+)} do
-y   @id = params[:id]
+   @id = params[:id]
     erb :profile
   end
 end
